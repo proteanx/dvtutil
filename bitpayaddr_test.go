@@ -1,10 +1,10 @@
 package bchutil
 
 import (
-	"testing"
-	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/btcsuite/btcutil"
 	"bytes"
+	"github.com/jakm/btcutil"
+	"github.com/jakm/btcutil/chaincfg"
+	"testing"
 )
 
 func TestDecodeBitpay(t *testing.T) {
