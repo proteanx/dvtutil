@@ -43,7 +43,7 @@ func (e UnsupportedWitnessProgLenError) Error() string {
 func encodeBitpayAddress(hash160, netID []byte) string {
 	// Format is 1 byte for a network and address class (i.e. P2PKH vs
 	// P2SH), 20 bytes for a RIPEMD160 hash, and 4 bytes of checksum.
-	return base58.CheckEncode(hash160[:ripemd160.Size], netID)
+	return base58.CheckEncode(hash160[:ripemd160.Size], netID, base58.Sha256D)
 }
 
 // DecodeAddress decodes the string encoding of an address and returns
@@ -55,7 +55,7 @@ func encodeBitpayAddress(hash160, netID []byte) string {
 func DecodeBitpay(addr string, defaultNet *chaincfg.Params) (btcutil.Address, error) {
 
 	// Switch on decoded length to determine the type.
-	decoded, netID, err := base58.CheckDecode(addr, defaultNet.AddressMagicLen)
+	decoded, netID, err := base58.CheckDecode(addr, defaultNet.AddressMagicLen, base58.Sha256D)
 	if err != nil {
 		if err == base58.ErrChecksum {
 			return nil, ErrChecksumMismatch
