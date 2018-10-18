@@ -8,6 +8,8 @@ import (
 )
 
 func TestDecodeBitpay(t *testing.T) {
+	chaincfg.RegisterBitcoinParams()
+
 	addr, err := DecodeBitpay("CLtewbVQHRvs2J9JzRo58aVCZAVF8VbkXU", &chaincfg.MainNetParams)
 	if err != nil {
 		t.Error(err)
