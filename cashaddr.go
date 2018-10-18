@@ -379,7 +379,7 @@ func DecodeAddress(addr string, defaultNet *chaincfg.Params) (btcutil.Address, e
 	}
 
 	// Add prefix if it does not exist
-	if addr[:len(pre)+1] != pre+":" {
+	if len(addr) > len(pre) && addr[:len(pre)+1] != pre+":" {
 		addr = pre + ":" + addr
 	}
 
