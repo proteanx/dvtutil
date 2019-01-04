@@ -5,12 +5,12 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
-	"github.com/btcsuite/btcd/btcec"
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/btcsuite/btcd/wire"
-	"github.com/jakm/btcutil"
-	"github.com/jakm/btcutil/chaincfg"
-	"github.com/jakm/btcutil/txscript"
+	"github.com/martinboehm/btcd/btcec"
+	"github.com/martinboehm/btcd/chaincfg/chainhash"
+	"github.com/martinboehm/btcd/wire"
+	"github.com/martinboehm/btcutil"
+	"github.com/martinboehm/btcutil/chaincfg"
+	"github.com/martinboehm/btcutil/txscript"
 )
 
 const (

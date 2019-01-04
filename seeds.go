@@ -1,6 +1,6 @@
 package bchutil
 
-import "github.com/jakm/btcutil/chaincfg"
+import "github.com/martinboehm/btcutil/chaincfg"
 
 var MainnetDNSSeeds = []chaincfg.DNSSeed{
 	{"seed.bitcoinabc.org", true},

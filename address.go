@@ -2,8 +2,8 @@ package bchutil
 
 import (
 	"errors"
-	"github.com/jakm/btcutil"
-	"github.com/jakm/btcutil/txscript"
+	"github.com/martinboehm/btcutil"
+	"github.com/martinboehm/btcutil/txscript"
 )
 
 func PayToAddrScript(addr btcutil.Address) ([]byte, error) {

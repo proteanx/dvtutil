@@ -9,7 +9,7 @@
 
 [[projects]]
   branch = "master"
-  name = "github.com/btcsuite/btcd"
+  name = "github.com/martinboehm/btcd"
   packages = ["btcec","chaincfg/chainhash","wire"]
   revision = "67e573d211ace594f1366b4ce9d39726c4b19bd0"
 
@@ -21,7 +21,7 @@
 
 [[projects]]
   branch = "master"
-  name = "github.com/jakm/btcutil"
+  name = "github.com/martinboehm/btcutil"
   packages = [".","base58","bech32","chaincfg","txscript"]
   revision = "224b76333062172edefdeb502123fdda12205f76"
 

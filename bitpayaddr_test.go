@@ -2,8 +2,8 @@ package bchutil
 
 import (
 	"bytes"
-	"github.com/jakm/btcutil"
-	"github.com/jakm/btcutil/chaincfg"
+	"github.com/martinboehm/btcutil"
+	"github.com/martinboehm/btcutil/chaincfg"
 	"testing"
 )
 
