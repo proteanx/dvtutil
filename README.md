@@ -1,4 +1,4 @@
-# bchutil
-Bitcoin Cash Utilities
+# dvtutil
+DeVault Utilities forked from Matrin Boehm's bchutil
 
-Contains the bitcoin cash signing algorithm and some protocol configuration. This package removes the need to use a fork of btcd when working with Bitcoin Cash.
+

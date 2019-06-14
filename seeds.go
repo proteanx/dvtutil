@@ -1,21 +1,17 @@
-package bchutil
+package dvtutil
 
 import "github.com/martinboehm/btcutil/chaincfg"
 
 var MainnetDNSSeeds = []chaincfg.DNSSeed{
-	{"seed.bitcoinabc.org", true},
-	{"seed-abc.bitcoinforks.org", true},
-	{"seed.bitcoinunlimited.info", true},
-	{"seed.bitprim.org", true},
-	{"seed.deadalnix.me", true},
+	{"seed.exploredvt.com", true},
+	{"seed.minedvt.com", true},
+	{"seed.devault.online", true},
+	{"seed.proteanx.com", true},
+	{"seed.devault.cc", true},
 }
 
 var TestnetDNSSeeds = []chaincfg.DNSSeed{
-	{"testnet-seed.bitcoinabc.org", true},
-	{"testnet-seed-abc.bitcoinforks.org", true},
-	{"testnet-seed.bitcoinunlimited.info", true},
-	{"testnet-seed.bitprim.org", true},
-	{"testnet-seed.deadalnix.me", true},
+	{"testnet-seed.exploredvt.com", true},
 }
 
 func GetDNSSeed(params *chaincfg.Params) []chaincfg.DNSSeed {

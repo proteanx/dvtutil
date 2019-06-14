@@ -1,4 +1,4 @@
-package bchutil
+package dvtutil
 
 import "github.com/martinboehm/btcd/wire"
 
@@ -6,8 +6,8 @@ import "github.com/martinboehm/btcd/wire"
 const SFNodeBitcoinCash wire.ServiceFlag = 1 << 5
 
 const (
-	// MainNet represents the main bitcoin network.
-	MainnetMagic wire.BitcoinNet = 0xe8f3e1e3
+	// MainNet represents the main devault network.
+	MainnetMagic wire.BitcoinNet = 0xde3a9c03
 
 	// Testnet represents the test network (version 3).
 	TestnetMagic wire.BitcoinNet = 0xf4f3e5f4

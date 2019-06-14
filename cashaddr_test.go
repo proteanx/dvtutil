@@ -1,4 +1,4 @@
-package bchutil
+package dvtutil
 
 import (
 	"github.com/martinboehm/btcutil"

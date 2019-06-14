@@ -1,4 +1,4 @@
-package bchutil
+package dvtutil
 
 import (
 	"errors"
